@@ -38,7 +38,7 @@
 
     <h1>Human Development Index</h1>
 
-    <form action="/predict" method="POST">
+  <form action="https://hdi-project.onrender.com/predict" method="POST">
 
         <input type="number" step="any" name="continent" placeholder="Continent (1-5)" required><br>
         <input type="number" step="any" name="gdp" placeholder="GDP" required><br>
@@ -50,9 +50,7 @@
 
     <br>
 
-    {% if prediction_text %}
-        <h2>{{ prediction_text }}</h2>
-    {% endif %}
+   <h2>Click Predict to see result</h2>
 
 </body>
 </html>
