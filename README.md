@@ -7,7 +7,6 @@ This project predicts the Human Development Index (HDI) using Machine Learning t
 - Python
 - Pandas
 - NumPy
-- Scikit-learn
 - Matplotlib
 - Flask
 - Jupyter Notebook
