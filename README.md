@@ -2,15 +2,11 @@
 
 This project predicts Human Development Index (HDI) using Machine Learning.
 
-## 🚀 Live App
+## 🚀 Start Prediction
 
-👉 Click here to use the app:
-
-https://a-comprehensive-measure-of-well-being-ns45.onrender.com
+👉 [Click here to Start Prediction](https://a-comprehensive-measure-of-well-being-ns45.onrender.com)
 
 ## 🛠️ Technologies Used
-
 - Python
 - Flask
 - Machine Learning
-(https://a-comprehensive-measure-of-well-being-ns45.onrender.com)
