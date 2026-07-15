@@ -1,30 +1,15 @@
-# 🌍 Human Development Index Prediction
+# 🌍 HDI Prediction App
 
-## 📌 Project Overview
-This project predicts the Human Development Index (HDI) using Machine Learning.
+This project predicts Human Development Index (HDI) using Machine Learning.
 
----
+## 🚀 Live App
 
-## 🚀 Live Demo
+👉 Click here to use the app:
+
 https://a-comprehensive-measure-of-well-being-ns45.onrender.com
 
----
+## 🛠️ Technologies Used
 
-## 💻 Technologies Used
 - Python
 - Flask
 - Machine Learning
-- HTML & CSS
-
----
-
-## ⚙️ How It Works
-1. User enters input  
-2. Flask processes data  
-3. Model predicts HDI  
-4. Result is shown  
-
----
-
-## 👩‍💻 Author
-Aiswarya
