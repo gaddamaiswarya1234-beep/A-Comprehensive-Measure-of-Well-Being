@@ -1,18 +1,22 @@
-from flask import Flask
+from flask import Flask, render_template, request
 
-# create app
 app = Flask(__name__)
 
-# home route
 @app.route('/')
 def home():
-    return "HDI App Working Successfully ✅"
+    return render_template("index.html")
 
-# extra route (optional test)
-@app.route('/predict')
+@app.route('/predict', methods=['POST'])
 def predict():
-    return "Prediction page working 👍"
+    # Get values from form
+    life = float(request.form['life'])
+    edu = float(request.form['edu'])
+    income = float(request.form['income'])
 
-# for local running
+    # Simple formula (example)
+    hdi = (life + edu + income) / 3
+
+    return render_template("index.html", prediction_text=f"HDI Value: {hdi:.2f}")
+
 if __name__ == "__main__":
-    app.run(host="0.0.0.0", port=5000)
+    app.run()
