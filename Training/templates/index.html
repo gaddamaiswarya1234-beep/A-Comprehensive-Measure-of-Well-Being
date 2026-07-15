@@ -2,57 +2,47 @@
 <html>
 <head>
     <title>HDI Prediction</title>
-
     <style>
         body {
-            font-family: Arial;
+            text-align: center;
+            font-family: Arial, sans-serif;
             background-color: #f2f2f2;
-            padding: 40px;
         }
 
         h1 {
-            color: black;
+            color: #333;
         }
 
-        input {
-            padding: 10px;
-            margin: 5px;
-            width: 220px;
+        .container {
+            margin-top: 100px;
         }
 
         button {
-            padding: 10px 20px;
-            background-color: #3498db;
+            padding: 12px 20px;
+            font-size: 18px;
+            background-color: blue;
             color: white;
             border: none;
+            border-radius: 5px;
             cursor: pointer;
         }
 
-        h2 {
-            color: green;
+        button:hover {
+            background-color: darkblue;
         }
     </style>
 </head>
-
 <body>
 
-    <h1>Human Development Index</h1>
+    <div class="container">
+        <h1>Human Development Index Prediction</h1>
 
-    <form action="/predict" method="POST">
+        <p>Click the button below to open the prediction app</p>
 
-        <input type="number" step="any" name="continent" placeholder="Continent (1-5)" required><br>
-        <input type="number" step="any" name="gdp" placeholder="GDP" required><br>
-        <input type="number" step="any" name="life" placeholder="Life Expectancy" required><br>
-        <input type="number" step="any" name="education" placeholder="Education Index" required><br>
-
-        <button type="submit">Predict</button>
-    </form>
-
-    <br>
-
-    {% if prediction_text %}
-        <h2>{{ prediction_text }}</h2>
-    {% endif %}
+        <a href="https://a-comprehensive-measure-of-well-being-ns45.onrender.com">
+            <button>Open Prediction App</button>
+        </a>
+    </div>
 
 </body>
 </html>
