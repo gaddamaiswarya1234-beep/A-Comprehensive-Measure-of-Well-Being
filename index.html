@@ -1,25 +1,26 @@
-<!DOCTYPE html>
+
+   <!DOCTYPE html>
 <html>
 <head>
     <title>HDI Prediction</title>
 </head>
 <body>
 
-    <h2>HDI Prediction App</h2>
+<h2>HDI Prediction App</h2>
 
-    <form action="/predict" method="post">
-        Life Expectancy: <input type="text" name="life"><br><br>
-        Education Index: <input type="text" name="edu"><br><br>
-        Income Index: <input type="text" name="income"><br><br>
+<form action="/predict" method="post">
+    Life: <input type="text" name="life"><br><br>
+    Education: <input type="text" name="edu"><br><br>
+    Income: <input type="text" name="income"><br><br>
 
-        <input type="submit" value="Predict">
-    </form>
+    <input type="submit" value="Predict">
+</form>
 
-    <br>
+<br>
 
-    {% if prediction_text %}
-        <h3>{{ prediction_text }}</h3>
-    {% endif %}
+{% if prediction_text %}
+    <h3>{{ prediction_text }}</h3>
+{% endif %}
 
 </body>
-</html>
+</html>>
